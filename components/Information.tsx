@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Information = () => {
   return (
-    <div className=" w-full  pt-10 xl:pt-32  rounded-xl mx-5 lg:mx-auto">
+    <div className=" w-full  pt-28 xl:pt-32  rounded-xl mx-5 lg:mx-auto">
       <div className=" max-w-7xl items-center mx-auto grid grid-cols-1 lg:grid-cols-2 xl:gap-32">
         <div className="text-4xl mr-10 lg:-mt-36 lg:text-8xl">
           <Image
@@ -18,13 +18,13 @@ const Information = () => {
         </div>
         <div className="text-4xl font-bold lg:text-8xl text-black">
           <h1>Elevate your online visibility!</h1>
-          <p className="text-lg mt-5">
+          <p className="text-lg mt-5 font-semibold">
             The ultimate platform that empowers your customers/guests to leave
             reviews on any review platform you prefer. Unlock greater reach,
             visibility, insights, and sales potential with our innovative
             solution.
           </p>
-          <button className="bg-purple-200 mt-5 py-5 px-5 rounded-full text-lg text-black">
+          <button className="bg-purple-200 mt-5 py-5 px-5 rounded-full text-lg text-black font-semibold">
             I want this 😍
           </button>
         </div>

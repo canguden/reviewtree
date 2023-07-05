@@ -2,10 +2,9 @@ import React from "react";
 import { GetServerSideProps, NextPage } from "next";
 import Stripe from "stripe";
 import ProductCard from "@/components/ProductCard";
-import ShopHeader from "@/components/ShopHeader";
 import Header from "@/components/Header";
-import Quote from "@/components/Quote";
 import ContactForm from "@/components/Quote";
+import Footer2 from "@/components/Footer2";
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const stripe = new Stripe(process.env.STRIPE_SECRET ?? "", {
@@ -51,10 +50,15 @@ const Shop: NextPage<Props> = ({ prices }: { prices: Stripe.Price[] }) => {
               <ProductCard key={p.id} price={p} />
             ))}
           </div>
-          <div className="mt-10">
-            <div className="max-w-xl">
-              <h1 className="text-4xl">Get a Quote</h1>
-              <p className="text-lg mt-5">
+          <div className="mt-20">
+            <div className="max-w-7xl">
+              <h1 className="text-xl leading-10 tracking-wide font-semibold lg:text-3xl">
+                Get a Quote
+              </h1>
+              <div className="max-w-7xl">
+                <hr className="mt-4 w-full" />
+              </div>
+              <p className="text-xl mt-5">
                 Unlock exclusive B2B benefits with our products, including
                 special discounts on large orders. Simply fill out the form, and
                 our team will promptly get in touch with you to discuss your
@@ -69,6 +73,7 @@ const Shop: NextPage<Props> = ({ prices }: { prices: Stripe.Price[] }) => {
           </div>
         </div>
       </main>
+      <Footer2 />
     </>
   );
 };

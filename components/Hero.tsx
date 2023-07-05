@@ -8,11 +8,11 @@ const Hero = () => {
       <div className="pt-64 xl:pt-96 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2">
         <div className="text-4xl  font-bold lg:text-8xl text-black">
           <h1>Boost your reviews</h1>
-          <p className="text-lg mt-5">
+          <p className="text-lg mt-5 font-semibold">
             Join 50.000+ companies using Reviewtree. One link to help you gain
             more reviews.
           </p>
-          <button className="bg-slate-700 mt-5 py-5 px-5 rounded-full text-lg text-white">
+          <button className="bg-slate-700 mt-5 py-5 px-5 rounded-full text-lg text-white font-semibold">
             Get started for free 🚀
           </button>
         </div>

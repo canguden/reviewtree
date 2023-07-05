@@ -126,7 +126,7 @@ const Header = () => {
       >
         <AiOutlineCloseCircle
           onClick={() => setNav(!nav)}
-          size={30}
+          size={40}
           className="absolute  right-4 top-4 text-white cursor-pointer"
         />
 
@@ -178,7 +178,7 @@ const Header = () => {
               </li>
             </Link>
 
-            <li>Imoprove your online visibility with Reviewtree.io</li>
+            <li>Improve your online visibility with Reviewtree.io</li>
             <li className="flex flex-row gap-6 mt-3 ">
               <Link
                 href="https://facebook.com/vakantiescout"

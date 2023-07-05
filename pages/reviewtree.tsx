@@ -1,15 +1,17 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import { BsStar, BsStarFill } from "react-icons/bs";
+import { BsArrowLeft, BsCircleFill, BsStar, BsStarFill } from "react-icons/bs";
 import logo from "../public/reviewtreeicon.svg";
 import google from "../public/google.png";
+import tripadvisor from "../public/tripadvisor.jpg";
 import trustpilot from "../public/trustpilot.jpg";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 
-const reviewtree = () => {
+const Reviewtree = () => {
   const [reviewText, setReviewText] = useState("");
   const [showReview, setShowReview] = useState(false);
+  const [isLoading, setIsLoading] = useState(false); // State for loader
 
   const textToCopy =
     "Reviewtree is an exceptional platform that empowers businesses to gather valuable reviews and enhance customer loyalty. With Reviewtree, you can effortlessly collect genuine feedback from your customers, allowing you to gain valuable insights and improve your products and services. The platform provides an intuitive and user-friendly interface, making it easy for your customers to share their experiences and opinions. By leveraging the power of Reviewtree, you can strengthen your brand reputation, increase customer trust, and establish long-lasting relationships with your audience. Experience the benefits of Reviewtree and unlock a world of possibilities for your business growth and success.";
@@ -25,15 +27,25 @@ const reviewtree = () => {
     const dummyReview =
       "Reviewtree is an exceptional platform that empowers businesses to gather valuable reviews and enhance customer loyalty. With Reviewtree, you can effortlessly collect genuine feedback from your customers, allowing you to gain valuable insights and improve your products and services. The platform provides an intuitive and user-friendly interface, making it easy for your customers to share their experiences and opinions. By leveraging the power of Reviewtree, you can strengthen your brand reputation, increase customer trust, and establish long-lasting relationships with your audience. Experience the benefits of Reviewtree and unlock a world of possibilities for your business growth and success.";
 
-    setReviewText(dummyReview);
-    setShowReview(true);
+    setIsLoading(true); // Show the loader
+
+    setTimeout(() => {
+      setReviewText(dummyReview);
+      setShowReview(true);
+      setIsLoading(false); // Hide the loader
+    }, 1000);
   };
 
   return (
     <>
       <div className="bg-gradient-to-t from-green-200 to-green-300 via-green-200 min-h-screen pt-10 w-full mx-auto">
         <div className="max-w-2xl mx-auto">
-          <div className="sticky top-10 bg-white/30 backdrop-blur-3xl max-w-2xl z-50 mx-5 xl:mx-auto  flex justify-center items-center h-[75px] lg:h-[70px] bg-slate-100 rounded-full mt-5 shadow-sm">
+          <div className="flex pt-5">
+            <Link href="/" className="flex">
+              <BsArrowLeft className="w-10 h-6" /> Back home
+            </Link>
+          </div>
+          <div className="sticky top-10 bg-white/20 backdrop-blur-3xl max-w-2xl z-50 mx-5 xl:mx-auto  flex justify-center items-center h-[60px] lg:h-[60px] bg-slate-100 rounded-full mt-5 shadow-sm">
             <div className="justify-center items-center text-center"></div>
             <Link href="/">
               <Image
@@ -45,8 +57,13 @@ const reviewtree = () => {
               />
             </Link>
           </div>
-
-          <div className="max-w-[600px] text-black font-bold mx-5 justify-center items-center flex text-center mt-20 xl:mx-auto flex-col">
+          <div className="max-w-2xl mx-auto  justify-center items-center text-center mt-4">
+            <h1 className="text-gray-700 font-bold text-2xl">@reviewtree</h1>
+            <p className="mt-2 ">
+              Effortlessly gather and manage reviews with ease
+            </p>
+          </div>
+          <div className="max-w-2xl text-black font-bold mx-5 justify-center items-center flex text-center mt-20 xl:mx-auto flex-col">
             <h1 className="text-4xl italic mb-10">
               Your feedback matters to us!
             </h1>
@@ -54,8 +71,17 @@ const reviewtree = () => {
             <button
               onClick={generateReview}
               className="bg-pink-200 mt-5 py-4 px-5 rounded-full"
+              disabled={isLoading} // Disable the button while loading
             >
-              Generate review
+              {isLoading ? (
+                <div className="flex items-center justify-center">
+                  <div className="w-2 h-2 bg-black rounded-full animate-bounce mx-1"></div>
+                  <div className="w-2 h-2 bg-black rounded-full animate-bounce mx-1"></div>
+                  <div className="w-2 h-2 bg-black rounded-full animate-bounce mx-1"></div>
+                </div>
+              ) : (
+                "Generate review"
+              )}
             </button>
             {showReview && (
               <div className="border-4 border-pink-300 mt-5 text-start py-5 px-5">
@@ -63,15 +89,15 @@ const reviewtree = () => {
               </div>
             )}
             {showReview && (
-              <div className="flex flex-row items-center gap-2 mt-5 py-3 px-3 bg-pink-200 rounded-xl">
+              <div className="flex flex-row text-xl items-center gap-2 mt-5 py-3 px-3 bg-pink-200 rounded-xl">
                 <CopyClipboard content={textToCopy} />
               </div>
             )}
           </div>
-          <div className="max-w-[600px] mx-5 justify-center items-center flex text-center mt-20 xl:mx-auto ">
+          <div className="max-w-[600px] pb-20 mx-5 justify-center items-center flex text-center mt-20 xl:mx-auto ">
             <ul className="text-black w-full mx-4 sm:mx-auto">
               <Link href="/deals" target="_blank">
-                <li className=" bg-white rounded-xl py-4   mb-5">
+                <li className=" bg-white rounded-xl py-4 mb-10">
                   <div className="flex flex-row grow justify-between mx-2">
                     <div className="flex flex-row items-center ">
                       <Image
@@ -82,7 +108,7 @@ const reviewtree = () => {
                         className="w-14 h-14 outline-none"
                       />
                       <h1 className="text-3xl lg:text-4xl ml-3">
-                        Google reviews
+                        Google Reviews
                       </h1>
                     </div>
                     <div className="flex flex-row gap-2 px-2">
@@ -109,7 +135,7 @@ const reviewtree = () => {
                 </li>
               </Link>
               <Link href="/deals" target="_blank">
-                <li className=" bg-[#000032] rounded-xl py-4   mb-5">
+                <li className=" bg-[#000032] rounded-xl py-4 mb-10">
                   <div className="flex flex-row grow justify-between mx-2">
                     <div className="flex flex-row items-center ">
                       <Image
@@ -129,7 +155,7 @@ const reviewtree = () => {
                   </div>
                   <div className="justify-between items-center flex flex-row px-2 gap-4 mt-5">
                     <div className="flex flex-row gap-2 px-2">
-                      <button className="bg-emerald-600 hover:bg-emerald-700 font-bold items-center text-xl  rounded-md py-3 px-3 text-white">
+                      <button className="bg-emerald-500 hover:bg-emerald-400 font-bold items-center text-xl  rounded-md py-3 px-3 text-white">
                         Leave review
                       </button>
                     </div>
@@ -146,6 +172,44 @@ const reviewtree = () => {
                   </div>
                 </li>
               </Link>
+              <Link href="/" target="_blank">
+                <li className=" bg-white rounded-xl py-4 mb-10">
+                  <div className="flex flex-row grow justify-between mx-2">
+                    <div className="flex flex-row items-center ">
+                      <Image
+                        src={tripadvisor}
+                        height={500}
+                        width={500}
+                        alt="logo"
+                        className="w-14 h-14 outline-none rounded-full"
+                      />
+                      <h1 className="text-3xl text-gray-900 lg:text-4xl ml-3">
+                        Tripadvisor
+                      </h1>
+                    </div>
+                    <div className="flex flex-row gap-2 px-2">
+                      <h1 className="font-bold text-gray-900 text-6xl ">3.9</h1>
+                    </div>
+                  </div>
+                  <div className="justify-between items-center flex flex-row px-2 gap-4 mt-5">
+                    <div className="flex flex-row gap-2 px-2">
+                      <button className="bg-[#33E0A1] hover:bg-emerald-500 font-bold items-center text-xl  rounded-md py-3 px-3 text-black">
+                        Leave review
+                      </button>
+                    </div>
+                    <div className="flex flex-row gap-2 px-2">
+                      <BsCircleFill className="text-[#33E0A1] rounded-full mt-2 w-8 h-8" />
+                      <BsCircleFill className="text-[#33E0A1] rounded-full mt-2 w-8 h-8" />
+                      <BsCircleFill className="text-[#33E0A1] rounded-full mt-2 w-8 h-8" />
+                      <BsCircleFill className="text-[#33E0A1] rounded-full mt-2 w-8 h-8" />
+                      <BsCircleFill className="text-white border-4 border-[#33E0A1] rounded-full mt-2 w-8 h-8" />
+                    </div>
+                  </div>
+                  <div className="flex justify-end px-4 underline text-gray-900 text-xl -mt-2">
+                    <p>29.083 reviews</p>
+                  </div>
+                </li>
+              </Link>
             </ul>
           </div>
         </div>
@@ -154,4 +218,4 @@ const reviewtree = () => {
   );
 };
 
-export default reviewtree;
+export default Reviewtree;

@@ -29,7 +29,7 @@ const Accordion = ({ question, answer, turn, setTurn, idx }: Props) => {
     setTurn!(newTurn);
   };
   return (
-    <div className="flex flex-col items-center justify-center w-full px-2 text-lg pt-4 lg:text-base">
+    <div className="flex flex-col items-center justify-center w-full px-2 text-xl pt-4 ">
       <button
         onClick={toggleAccordion}
         className={`bg-transparent rounded-xl px-5 shadow-md cursor-pointer w-full h-full ${
@@ -38,7 +38,7 @@ const Accordion = ({ question, answer, turn, setTurn, idx }: Props) => {
       >
         <div className="py-3">
           <div className="flex items-center justify-between h-14 text-left">
-            <span className="ml-2 font-medium lg:font-semibold lg:text-2xl text-xl text-black">
+            <span className="ml-2 font-medium lg:font-semibold  text-xl text-black">
               {question}
             </span>
             <div>{turn![idx] ? <FaAngleUp /> : <FaAngleDown />}</div>

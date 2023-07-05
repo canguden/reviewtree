@@ -3,6 +3,7 @@ import data from "../data.json";
 import Layout from "../components/Layout";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Footer2 from "@/components/Footer2";
 
 export default function Faq() {
   const [active, setActive] = useState([false, false, false, false, false]);
@@ -18,7 +19,7 @@ export default function Faq() {
   return (
     <>
       <Header />
-      <div className="mt-20 mb-20 grid place-items-center w-full">
+      <div className="mt-20 pb-20 grid place-items-center w-full">
         <Layout
           handleClick={handleClick}
           isSomeActive={isSomeActive}
@@ -28,7 +29,7 @@ export default function Faq() {
         />
       </div>
       <div className="mt-48">
-        <Footer />;
+        <Footer2 />;
       </div>
     </>
   );

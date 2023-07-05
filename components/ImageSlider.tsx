@@ -12,7 +12,7 @@ import mamapizza from "../public/mamapizza.png";
 const ImageSlider = () => {
   return (
     <Marquee>
-      <div className="text-5xl gap-10 flex flex-row">
+      <div className="select-none text-5xl gap-10 flex flex-row">
         <div>
           <Image
             src={ibis}

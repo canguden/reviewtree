@@ -20,20 +20,23 @@ const SectionDemo = () => {
             />
           </div>
           <div className="mt-10 text-4xl font-bold xl:text-8xl text-black">
-            <h1>Our fully customizable Reviewcards</h1>
-            <p className="text-lg max-w-xs sm:max-w-full mt-5">
+            <h1>
+              Our fully customizable{" "}
+              <span className="italic text-green-400">Reviewcards</span>
+            </h1>
+            <p className="text-lg max-w-xs sm:max-w-full mt-5 font-semibold">
               Experience the power of our tools by scanning the QR code or
               clicking the link below.
             </p>
-            <Link href="/preview">
-              <div className="mt-5 mb-5">
+            <Link href="/reviewtree">
+              <div className="mt-5 mb-5 font-semibold">
                 <p className="underline text-blue-500 text-2xl mt-2">
                   reviewtree.io/reviewtree
                 </p>
               </div>
             </Link>
             <Link href="/shop">
-              <button className="bg-slate-700 mt-10 py-5 px-5 rounded-full text-lg text-white">
+              <button className="bg-slate-700 mt-10 py-5 px-5 rounded-full text-lg text-white font-semibold">
                 Visit shop
               </button>
             </Link>

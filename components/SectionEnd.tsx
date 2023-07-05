@@ -5,11 +5,11 @@ import Image from "next/image";
 
 const SectionEnd = () => {
   return (
-    <div className=" w-full  pt-20 xl:pt-32  rounded-xl mx-5 sm:mx-auto">
+    <div className=" w-full  pt-10 xl:pt-32  rounded-xl mx-5 sm:mx-auto">
       <div className=" max-w-7xl items-center mx-auto grid grid-cols-1 sm:grid-cols-2  lg:gap-32">
         <div className="text-4xl font-bold lg:text-8xl text-black">
           <h1>Explore our plans</h1>
-          <ul className="flex flex-col text-lg mt-10 gap-2">
+          <ul className="flex flex-col text-lg font-semibold mt-10 gap-2">
             <li className="flex">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -111,15 +111,15 @@ const SectionEnd = () => {
               </span>
             </li>
           </ul>
-          <button className="bg-purple-200 mt-5 py-5 px-5 rounded-full text-lg text-black">
+          <button className="bg-green-300 mt-5 py-5 px-5 rounded-full text-lg text-black font-semibold">
             See pricing
           </button>
         </div>
         <div className="text-4xl -mt-10 mr-10 lg:-mt-12 lg:text-8xl">
           <Image
             src={end}
-            height={500}
-            width={500}
+            height={400}
+            width={400}
             alt="logo"
             className="fixed-element lg:pt-20 mx-5 select-none"
           />

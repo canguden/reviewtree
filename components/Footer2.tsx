@@ -4,10 +4,10 @@ import logo from "../public/logo.svg";
 import { FaInstagram } from "react-icons/fa";
 import Link from "next/link";
 
-const Footer = () => {
+const Footer2 = () => {
   return (
     <>
-      <div className="bg-slate-100">
+      <div className="bg-white-100">
         <div className="max-w-[1600px] lg:mx-auto mx-5 mt-48 justify-center text-center items-center bg-white shadow-xl rounded-tr-xl rounded-tl-xl gap-16 pb-28">
           <div className="pt-10 pb-5 flex justify-center ">
             <Image
@@ -54,4 +54,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footer2;

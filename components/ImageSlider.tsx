@@ -8,6 +8,7 @@ import floor17 from "../public/floorroof.jpg";
 import crown from "../public/goldencrown.jpg";
 import melia from "../public/images.png";
 import mamapizza from "../public/mamapizza.png";
+import thuisbezorgd from "../public/thuisbezorgd.png";
 
 const ImageSlider = () => {
   return (
@@ -34,6 +35,15 @@ const ImageSlider = () => {
         <div>
           <Image
             src={floor17}
+            height={250}
+            width={250}
+            alt="mamasan"
+            className="rounded-xl"
+          />
+        </div>
+        <div>
+          <Image
+            src={thuisbezorgd}
             height={250}
             width={250}
             alt="mamasan"

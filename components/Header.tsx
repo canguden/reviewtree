@@ -72,16 +72,8 @@ const Header = () => {
             </li>
           </Link>
 
-          <Link
-            href="/contact"
-            className={`${
-              router.pathname === "/contact"
-                ? "underline decoration-white underline-offset-4"
-                : ""
-            } `}
-          >
+          <Link href="/contact">
             <li className="text-md font-bold ml-6 flex  py-4 px-5 cursor-pointer hover:bg-slate-200 hover:rounded-xl hover:py-4 hover:px-5 duration-300">
-              {" "}
               Pricing
             </li>
           </Link>
@@ -92,14 +84,8 @@ const Header = () => {
               Support
             </li>
           </Link>
-          <Link
-            href="/contact"
-            className={`${
-              router.pathname === "/contact" ? "hover:bg-blue-600" : ""
-            } `}
-          >
+          <Link href="/yourlink">
             <li className="text-md ml-6 font-bold  flex  py-4 px-5 cursor-pointer">
-              {" "}
               <button className="bg-slate-700 py-4 px-5 rounded-full hover:bg-slate-800 duration-300 text-white">
                 Request Link
               </button>
@@ -132,47 +118,23 @@ const Header = () => {
 
         <nav>
           <ul className="flex flex-col text-center justify-center items-center group p-4 text-white font-semibold mt-10">
-            <Link
-              href="/"
-              onClick={() => setNav(!nav)}
-              className={`${
-                router.pathname === "/"
-                  ? "underline decoration-white underline-offset-4"
-                  : ""
-              } `}
-            >
+            <Link href="/" onClick={() => setNav(!nav)}>
               <li className="text-2xl py-4 flex  cursor-pointer hover:underline hover:decoration-white hover:underline-offset-4 duration-300">
                 Home
               </li>
             </Link>
-            <Link
-              href="/hotels"
-              onClick={() => setNav(!nav)}
-              className={`${
-                router.pathname === "/vakantie-deals"
-                  ? "underline decoration-white underline-offset-4"
-                  : ""
-              } `}
-            >
+            <Link href="/shop">
               <li className="text-2xl py-4 flex  cursor-pointer hover:underline hover:decoration-white hover:underline-offset-4 duration-300">
                 Products
               </li>
             </Link>
 
-            <Link href="/contact">
+            <Link href="/">
               <li className="text-2xl py-4 flex cursor-pointer   duration-300">
                 Pricing
               </li>
             </Link>
-            <Link
-              href="/contact"
-              onClick={() => setNav(!nav)}
-              className={`${
-                router.pathname === "/contact"
-                  ? "underline decoration-white underline-offset-4"
-                  : ""
-              } `}
-            >
+            <Link href="/">
               <li className="text-2xl py-4 flex mb-3 cursor-pointer hover:underline hover:decoration-white hover:underline-offset-4 duration-300">
                 Support
               </li>

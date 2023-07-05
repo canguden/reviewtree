@@ -84,7 +84,7 @@ const Reviewtree = () => {
               )}
             </button>
             {showReview && (
-              <div className="border-4 border-pink-300 mt-5 text-start py-5 px-5">
+              <div className="border-4 border-pink-300 mt-5 font-semibold text-start py-5 px-5">
                 <p>{reviewText}</p>
               </div>
             )}

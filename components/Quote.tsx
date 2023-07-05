@@ -14,12 +14,20 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col">
-      <label htmlFor="full-name">Full Name</label>
+      <label htmlFor="full-name">Company</label>
       <input
         type="text"
         name="name"
         id="full-name"
-        placeholder="Name"
+        placeholder="Company name"
+        className="border rounded-full max-w-xl py-2 px-4 mt-5 mb-5"
+      />
+      <label htmlFor="full-name">Contact Person</label>
+      <input
+        type="text"
+        name="name"
+        id="full-name"
+        placeholder="Fulll Name"
         className="border rounded-full max-w-xl py-2 px-4 mt-5 mb-5"
       />
       <label htmlFor="email">Email Address</label>
@@ -27,11 +35,11 @@ export default function ContactForm() {
         id="email"
         type="email"
         name="email"
-        placeholder="Your email"
+        placeholder="email@email.com"
         className="border rounded-full max-w-xl py-2 px-4 mt-5"
       />
       <ValidationError prefix="Email" field="email" errors={state.errors} />
-      <p className="mt-5">Extra information</p>
+      <p className="mt-5">Message</p>
       <textarea
         id="message"
         name="message"

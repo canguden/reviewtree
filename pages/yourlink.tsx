@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import ContactForm from "@/components/Quote";
 import React from "react";
 
-const link = () => {
+const yourlink = () => {
   return (
     <>
       <Header />
@@ -23,4 +23,4 @@ const link = () => {
   );
 };
 
-export default link;
+export default yourlink;

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import hero from "../public/heroimg.png";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -12,9 +13,11 @@ const Hero = () => {
             Join 50.000+ companies using Reviewtree. One link to help you gain
             more reviews.
           </p>
-          <button className="bg-slate-700 mt-5 py-5 px-5 rounded-full text-lg text-white font-semibold">
-            Get started for free 🚀
-          </button>
+          <Link href="/yourlink">
+            <button className="bg-slate-700 mt-5 py-5 px-5 rounded-full text-lg text-white font-semibold">
+              Get started for free 🚀
+            </button>
+          </Link>
         </div>
         <div className="text-4xl mr-10 -mt-10 xl:-mt-36 lg:text-8xl text-purple-400">
           <Image

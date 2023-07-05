@@ -28,13 +28,13 @@ const SectionDemo = () => {
               Experience the power of our tools by scanning the QR code or
               clicking the link below.
             </p>
-            <Link href="/reviewtree">
-              <div className="mt-5 mb-5 font-semibold">
-                <p className="underline text-blue-500 text-2xl mt-2">
+            <div className="mt-5 mb-5 font-semibold">
+              <Link href="/reviewtree">
+                <p className="text-blue-500 text-2xl mt-2 hover:underline hover:underline-offset-4">
                   reviewtree.io/reviewtree
                 </p>
-              </div>
-            </Link>
+              </Link>
+            </div>
             <Link href="/shop">
               <button className="bg-slate-700 mt-10 py-5 px-5 rounded-full text-lg text-white font-semibold">
                 Visit shop

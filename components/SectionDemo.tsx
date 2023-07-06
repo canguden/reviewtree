@@ -4,6 +4,7 @@ import reviewcard from "../public/reviewcard.png";
 import Image from "next/image";
 import ImageSlider from "./ImageSlider";
 import Link from "next/link";
+import LinkForm from "./LinkForm";
 
 const SectionDemo = () => {
   return (
@@ -26,7 +27,7 @@ const SectionDemo = () => {
             </h1>
             <p className="text-lg max-w-xs sm:max-w-full mt-5 font-semibold">
               Experience the power of our tools by scanning the QR code or
-              clicking the link below.
+              clicking the demo link below.
             </p>
             <div className="mt-5 mb-5 font-semibold">
               <Link href="/reviewtree">
@@ -43,7 +44,7 @@ const SectionDemo = () => {
           </div>
         </div>
 
-        <div className="max-w-7xl mx-10 lg:mx-auto text-center mt-32 font-bold text-3xl xl:text-5xl">
+        <div className="max-w-7xl  mx-10 lg:mx-auto text-center mt-32 font-bold text-3xl xl:text-5xl">
           <h1>The best review tool trusted by 50k+</h1>
         </div>
         <div className="w-full mt-20 mb-20 ">

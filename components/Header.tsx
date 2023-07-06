@@ -11,6 +11,7 @@ import { useRouter } from "next/router";
 import CartContext from "../components/CartContext";
 import { FunctionComponent, Key, useContext } from "react";
 import logo from "../public/logo.svg";
+import reviewtreeicon from "../public/reviewtreeicon.svg";
 import Image from "next/image";
 import ShopHeader from "./ShopHeader";
 
@@ -72,18 +73,18 @@ const Header = () => {
             </li>
           </Link>
 
-          <Link href="/contact">
+          <Link href="/faq">
             <li className="text-md font-bold ml-6 flex  py-4 px-5 cursor-pointer hover:bg-slate-200 hover:rounded-xl hover:py-4 hover:px-5 duration-300">
-              Pricing
+              FAQs
             </li>
           </Link>
 
           <Link href="/contact">
-            <li className="text-md font-bold ml-6 flex py-4 px-5 cursor-pointer hover:bg-slate-200 hover:rounded-xl hover:py-4 hover:px-5 duration-300">
-              {" "}
-              Support
+            <li className="text-md font-bold ml-6 flex  py-4 px-5 cursor-pointer hover:bg-slate-200 hover:rounded-xl hover:py-4 hover:px-5 duration-300">
+              Contact
             </li>
           </Link>
+
           <Link href="/yourlink">
             <li className="text-md ml-6 font-bold  flex  py-4 px-5 cursor-pointer">
               <button className="bg-slate-700 py-4 px-5 rounded-full hover:bg-slate-800 duration-300 text-white">
@@ -91,7 +92,7 @@ const Header = () => {
               </button>
             </li>
           </Link>
-          <li className="text-md ml-6 font-bold  flex  py-4 px-5 cursor-pointer">
+          <li className="text-md  font-bold  flex  py-4 px-5 cursor-pointer">
             <ShopHeader />
           </li>
         </ul>
@@ -106,8 +107,8 @@ const Header = () => {
       <div
         className={
           nav
-            ? "fixed top-0 right-0 w-[400px] h-screen bg-emerald-400 z-10 duration-300 xl:hidden"
-            : "fixed top-0 right-[-100%] w-[400px] h-screen bg-green-400 z-10 duration-300 xl:hidden"
+            ? "fixed top-0 right-0 w-[400px] h-screen bg-slate-700 z-10 duration-300 xl:hidden"
+            : "fixed top-0 right-[-100%] w-[400px] h-screen bg-slate-700 z-10 duration-300 xl:hidden"
         }
       >
         <AiOutlineCloseCircle
@@ -129,41 +130,35 @@ const Header = () => {
               </li>
             </Link>
 
-            <Link href="/">
+            <Link href="/faq">
               <li className="text-2xl py-4 flex cursor-pointer   duration-300">
-                Pricing
-              </li>
-            </Link>
-            <Link href="/">
-              <li className="text-2xl py-4 flex mb-3 cursor-pointer hover:underline hover:decoration-white hover:underline-offset-4 duration-300">
-                Support
+                FAQs
               </li>
             </Link>
 
-            <li>Improve your online visibility with Reviewtree.io</li>
-            <li className="flex flex-row gap-6 mt-3 ">
-              <Link
-                href="https://facebook.com/vakantiescout"
-                target="_blank"
-                className="hover:text-blue-700"
-              >
-                <FaFacebook className="h-5 w-5" />
-              </Link>
-              <Link
-                href="https://instagram.com/vakantiescout"
-                target="_blank"
-                className="hover:text-blue-700"
-              >
-                <FaInstagram className="h-5 w-5" />
-              </Link>
-              <Link
-                href="https://twitter.com/vakantiescout"
-                target="_blank"
-                className="hover:text-blue-700"
-              >
-                <FaTwitter className="h-5 w-5" />
-              </Link>
+            <Link href="/contact">
+              <li className="text-2xl py-4 flex cursor-pointer   duration-300">
+                Contact
+              </li>
+            </Link>
+
+            <li className="mt-5">
+              Improve your online visibility with Reviewtree.io
             </li>
+            <ul className="text-center justify-center items-center flex pt-5">
+              <Link href="/reviewtree">
+                <li className="flex items-center">
+                  <Image
+                    src={reviewtreeicon}
+                    height={20}
+                    width={20}
+                    alt="Reviewtree"
+                    className=""
+                  />
+                  io/reviewtree
+                </li>
+              </Link>
+            </ul>
           </ul>
         </nav>
       </div>

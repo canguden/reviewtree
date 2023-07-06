@@ -1,5 +1,6 @@
 import Footer2 from "@/components/Footer2";
 import Header from "@/components/Header";
+import LinkForm from "@/components/LinkForm";
 import ContactForm from "@/components/Quote";
 import React from "react";
 
@@ -7,15 +8,10 @@ const yourlink = () => {
   return (
     <>
       <Header />
-      <div>
-        <div className="max-w-7xl px-2 mx-auto mt-20">
-          <h1 className="text-2xl text-center mb-20 lg:text-4xl font-semibold">
-            Claim your Reviewtree Link now, for{" "}
-            <span className="italic text-green-500">Free</span>
-          </h1>
-          <div className="grid grid-cols-1 xl:grid-cols-2">
-            <ContactForm />
-          </div>
+      <div className="justify-center w-full   lg:mx-auto text-center pt-48 font-bold">
+        <h1 className="text-3xl xl:text-5xl ">Claim your link</h1>
+        <div className="max-w-xl justify-center mx-auto mt-10">
+          <LinkForm />
         </div>
       </div>
       <Footer2 />

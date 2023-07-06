@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import logo from "../public/logo.svg";
+import reviewtreeicon from "../public/reviewtreeicon.svg";
 import { FaInstagram } from "react-icons/fa";
 import Link from "next/link";
 
@@ -24,13 +25,17 @@ const Footer2 = () => {
               Products
             </li>
             <div className="lg:hidden border-2 border-green-100  mt-5 mb-5 max-w-7xl mx-auto"></div>
-            <li className="py-4 px-5 cursor-pointer hover:bg-slate-200 hover:rounded-xl hover:py-4 hover:px-5 duration-300">
-              Request link
-            </li>
+            <Link href="/yourlink">
+              <li className="py-4 px-5 cursor-pointer hover:bg-slate-200 hover:rounded-xl hover:py-4 hover:px-5 duration-300">
+                Request link
+              </li>
+            </Link>
             <div className="lg:hidden border-2 border-green-100  mt-5 mb-5 max-w-7xl mx-auto"></div>
-            <li className="py-4 px-5 cursor-pointer hover:bg-slate-200 hover:rounded-xl hover:py-4 hover:px-5 duration-300">
-              Pricing
-            </li>
+            <Link href="/contact">
+              <li className="py-4 px-5 cursor-pointer hover:bg-slate-200 hover:rounded-xl hover:py-4 hover:px-5 duration-300">
+                Contact
+              </li>
+            </Link>
             <div className="lg:hidden border-2 border-green-100  mt-5 mb-5 max-w-7xl mx-auto"></div>
             <Link href="/faq">
               <li className="py-4 px-5 cursor-pointer hover:bg-slate-200 hover:rounded-xl hover:py-4 hover:px-5 duration-300">
@@ -38,15 +43,20 @@ const Footer2 = () => {
               </li>
             </Link>
             <div className="lg:hidden border-2 border-green-100 mt-5 mb-5 max-w-7xl mx-auto"></div>
-            <li className="py-4 px-5 cursor-pointer hover:bg-slate-200 hover:rounded-xl hover:py-4 hover:px-5 duration-300">
-              Support
-            </li>
-            <div className="lg:hidden border-2 border-green-100  mt-5 max-w-7xl mx-auto"></div>
           </ul>
-          <ul className="text-center justify-center items-center flex">
-            <li>
-              <FaInstagram className="w-5 h-5 mt-5" />
-            </li>
+          <ul className="text-center justify-center items-center flex pt-5">
+            <Link href="/reviewtree">
+              <li className="flex items-center">
+                <Image
+                  src={reviewtreeicon}
+                  height={20}
+                  width={20}
+                  alt="Reviewtree"
+                  className=""
+                />
+                io/reviewtree
+              </li>
+            </Link>
           </ul>
         </div>
       </div>

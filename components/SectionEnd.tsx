@@ -114,7 +114,7 @@ const SectionEnd = () => {
           </ul>
           <Link href="/">
             <button className="bg-green-300 mt-5 py-5 px-5 rounded-full text-lg text-black font-semibold">
-              See pricing
+              Contact us
             </button>
           </Link>
         </div>

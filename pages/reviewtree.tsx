@@ -84,7 +84,7 @@ const Reviewtree = () => {
               )}
             </button>
             {showReview && (
-              <div className="border-4 border-pink-300 mt-5 font-semibold text-start py-5 px-5">
+              <div className="border-4 border-pink-300 mt-5 font-semibold text-start text-sm text-gray-600 py-5 px-5">
                 <p>{reviewText}</p>
               </div>
             )}
@@ -129,7 +129,7 @@ const Reviewtree = () => {
                       <BsStarFill className="text-gray-300  mt-2 w-8 h-8" />
                     </div>
                   </div>
-                  <div className="flex justify-end px-4 underline text-gray-700 text-xl -mt-2">
+                  <div className="flex justify-end px-4 underline text-gray-700 text-lg -mt-2">
                     <p>1943 reviews</p>
                   </div>
                 </li>
@@ -167,7 +167,7 @@ const Reviewtree = () => {
                       <BsStarFill className="text-green-400  mt-2 w-8 h-8" />
                     </div>
                   </div>
-                  <div className="flex justify-end px-4 underline text-gray-100 text-xl -mt-2">
+                  <div className="flex justify-end px-4 underline text-gray-100 text-lg -mt-2">
                     <p>283 reviews</p>
                   </div>
                 </li>
@@ -205,12 +205,22 @@ const Reviewtree = () => {
                       <BsCircleFill className="text-white border-4 border-[#33E0A1] rounded-full mt-2 w-8 h-8" />
                     </div>
                   </div>
-                  <div className="flex justify-end px-4 underline text-gray-900 text-xl -mt-2">
+                  <div className="flex justify-end px-4 underline text-gray-900 text-lg -mt-2">
                     <p>29.083 reviews</p>
                   </div>
                 </li>
               </Link>
             </ul>
+          </div>
+          <div className="max-w-2xl px-2 mx-auto pb-20 justify-center items-center text-center mt-4">
+            <h1 className="text-xl font-semibold ">
+              Apply now to personalize your link with your unique homestyle!
+            </h1>
+            <Link href="/yourlink">
+              <button className="bg-pink-200 text-black mt-5 font-semibold py-2 px-3 rounded-full">
+                Request Link
+              </button>
+            </Link>
           </div>
         </div>
       </div>

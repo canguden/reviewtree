@@ -2,27 +2,33 @@
   {
     "idx": 1,
     "question": "What is Reviewtree?",
-    "answer": "reviewtree is a link to a website where users can review from google, trustpilot, booking or any review platform you prefer."
+    "answer": "Reviewtree.io is a comprehensive platform that provides links to all major review platforms, allowing businesses to consolidate and manage their online reviews effectively. We also offer review cards and stands, enabling customers to conveniently scan and leave reviews."
   },
   {
     "idx": 2,
-    "question": "How it works?",
-    "answer": "reviewtree is a link to a website where users can review from google, trustpilot, booking or any review platform you prefer."
+    "question": "How can reviewtree.io benefit my business?",
+    "answer": "By using reviewtree.io, you can streamline your online review management process. Our platform saves you time and effort by centralizing your review links and providing a user-friendly interface for placing and monitoring to reviews. Additionally, our review cards and stands encourage customer engagement, making it easier for them to leave reviews."
   },
   {
     "idx": 3,
-    "question": "Is it free?",
-    "answer": "reviewtree is a link to a website where users can review from google, trustpilot, booking or any review platform you prefer."
+    "question": "Are the review cards and stands customizable?",
+    "answer": "Yes, absolutely! At reviewtree.io, we understand the importance of branding. Our review cards and stands can be customized with your company's logo, colors, and other branding elements, ensuring a consistent and professional look that aligns with your business identity."
   },
   {
     "idx": 4,
-    "question": "What are the functionalities?",
-    "answer": "reviewtree is a link to a website where users can review from google, trustpilot, booking or any review platform you prefer."
+    "question": "How can I encourage my customers to leave reviews using reviewtree.io?",
+    "answer": "We have several strategies to help you increase customer engagement and encourage reviews. Firstly, our review cards and stands make it effortless for customers to scan and leave reviews on their preferred platforms. Secondly, we provide you with marketing materials and best practices to promote review participation, such as offering incentives for leaving feedback. Our customer support team is also available to offer personalized guidance tailored to your business."
   },
 
   {
     "idx": 5,
-    "question": "How long does it take to ship?",
-    "answer": "reviewtree is a link to a website where users can review from google, trustpilot, booking or any review platform you prefer."
+    "question": "Can I track and monitor the reviews I receive through reviewtree.io?",
+    "answer": "Absolutely! Our platform includes robust review monitoring and analytics features. You can track and analyze your reviews from multiple platforms in one centralized dashboard. Gain insights into overall review sentiment, ratings, and customer feedback trends. This valuable information helps you identify areas for improvement, respond to customer concerns, and showcase positive feedback to build trust and credibility."
+  },
+
+  {
+    "idx": 6,
+    "question": "How secure is reviewtree.io?",
+    "answer": "Security is a top priority at reviewtree.io. We implement industry-standard encryption protocols to safeguard your data and ensure that all interactions on our platform are secure. You can trust that your business and customer information is protected when using our services."
   }
 ]

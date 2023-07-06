@@ -13,7 +13,10 @@ const Cancel: NextPage = () => {
           </h1>
           <p>
             If you feel this is an error, please contact our{" "}
-            <Link href="/support" className="text-blue-500 underline">
+            <Link
+              href="/support"
+              className="text-blue-500 underline underline-offset-4"
+            >
               support team
             </Link>
           </p>

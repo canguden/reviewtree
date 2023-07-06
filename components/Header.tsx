@@ -52,13 +52,13 @@ const Header = () => {
   };
 
   return (
-    <div className=" max-w-[1400px] z-50 mx-5 xl:mx-auto  flex justify-between items-center h-[75px] lg:h-[80px] bg-slate-100 rounded-full mt-10 shadow-xl">
+    <div className=" max-w-[1400px] z-50 mx-4 xl:mx-auto  flex justify-between items-center h-[60px] lg:h-[70px] bg-slate-100 rounded-full mt-10 shadow-xl">
       <div className="flex max-w-5xl  mx-1 lg:mx-10 justify-between flex-row items-center uppercase text-xl font-extrabold">
         <Link href="/" className="flex flex-row">
           <Image
             src={logo}
-            height={200}
-            width={200}
+            height={150}
+            width={150}
             alt="logo"
             className="fixed-element mx-5"
           />
@@ -87,7 +87,7 @@ const Header = () => {
 
           <Link href="/yourlink">
             <li className="text-md ml-6 font-bold  flex  py-4 px-5 cursor-pointer">
-              <button className="bg-slate-700 py-4 px-5 rounded-full hover:bg-slate-800 duration-300 text-white">
+              <button className="bg-slate-700 py-3 px-4 rounded-full hover:bg-slate-800 duration-300 text-white">
                 Request Link
               </button>
             </li>
@@ -107,8 +107,8 @@ const Header = () => {
       <div
         className={
           nav
-            ? "fixed top-0 right-0 w-[400px] h-screen bg-slate-700 z-10 duration-300 xl:hidden"
-            : "fixed top-0 right-[-100%] w-[400px] h-screen bg-slate-700 z-10 duration-300 xl:hidden"
+            ? "fixed top-0 right-0 w-[300px] h-screen bg-slate-700 z-10 duration-300 xl:hidden"
+            : "fixed top-0 right-[-100%] w-[300px] h-screen bg-slate-700 z-10 duration-300 xl:hidden"
         }
       >
         <AiOutlineCloseCircle
@@ -120,32 +120,24 @@ const Header = () => {
         <nav>
           <ul className="flex flex-col text-center justify-center items-center group p-4 text-white font-semibold mt-10">
             <Link href="/" onClick={() => setNav(!nav)}>
-              <li className="text-2xl py-4 flex  cursor-pointer hover:underline hover:decoration-white hover:underline-offset-4 duration-300">
-                Home
-              </li>
+              <li className="text-2xl py-4 flex  cursor-pointer">Home</li>
             </Link>
             <Link href="/shop">
-              <li className="text-2xl py-4 flex  cursor-pointer hover:underline hover:decoration-white hover:underline-offset-4 duration-300">
-                Products
-              </li>
+              <li className="text-2xl py-4 flex  cursor-pointer">Products</li>
             </Link>
 
             <Link href="/yourlink">
-              <li className="text-2xl py-4 flex cursor-pointer   duration-300">
+              <li className="text-2xl py-4 flex cursor-pointer">
                 Request Link
               </li>
             </Link>
 
             <Link href="/faq">
-              <li className="text-2xl py-4 flex cursor-pointer   duration-300">
-                FAQs
-              </li>
+              <li className="text-2xl py-4 flex cursor-pointer">FAQs</li>
             </Link>
 
             <Link href="/contact">
-              <li className="text-2xl py-4 flex cursor-pointer   duration-300">
-                Contact
-              </li>
+              <li className="text-2xl py-4 flex cursor-pointer">Contact</li>
             </Link>
 
             <li className="mt-5">

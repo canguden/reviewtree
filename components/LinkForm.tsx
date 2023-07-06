@@ -40,8 +40,8 @@ export default function LinkForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col  items-center px-4 ">
-      <div className="flex flex-row items-center mx-4">
+    <form onSubmit={handleSubmit} className="flex flex-col  items-center mx-4 ">
+      <div className="flex flex-row items-center text-sm">
         <label htmlFor="full-name" className="mr-5"></label>
         <p>
           <span className="text-gray-700">https://reviewtree.io/</span>

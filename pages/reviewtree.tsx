@@ -45,7 +45,7 @@ const Reviewtree = () => {
               <BsArrowLeft className="w-10 h-6" /> Back home
             </Link>
           </div>
-          <div className="sticky top-10 bg-white/20 backdrop-blur-3xl max-w-2xl z-50 mx-5 xl:mx-auto  flex justify-center items-center h-[60px] lg:h-[60px] bg-slate-100 rounded-full mt-5 shadow-sm">
+          <div className="sticky top-10 bg-green-200 backdrop-blur-2xl max-w-2xl z-50 mx-5 xl:mx-auto  flex justify-center items-center h-[60px] lg:h-[60px]  rounded-full mt-5 shadow-sm">
             <div className="justify-center items-center text-center"></div>
             <Link href="/">
               <Image
@@ -107,7 +107,7 @@ const Reviewtree = () => {
                         alt="logo"
                         className="w-14 h-14 outline-none"
                       />
-                      <h1 className="text-3xl lg:text-4xl ml-3">
+                      <h1 className="text-xl lg:text-4xl ml-3">
                         Google Reviews
                       </h1>
                     </div>
@@ -117,19 +117,19 @@ const Reviewtree = () => {
                   </div>
                   <div className="justify-between items-center flex flex-row px-2 gap-4 mt-5">
                     <div className="flex flex-row gap-2 px-2">
-                      <button className="bg-blue-500 hover:bg-blue-600 font-bold  text-xl  rounded-md py-3 px-3  items-center  text-white">
+                      <button className="bg-blue-500 hover:bg-blue-600 font-semibold text-md  rounded-md py-2 px-2  items-center  text-white">
                         Leave review
                       </button>
                     </div>
                     <div className="flex flex-row gap-2 px-2">
-                      <BsStarFill className="text-yellow-400  mt-2 w-8 h-8" />
-                      <BsStarFill className="text-yellow-400 mt-2 w-8 h-8" />
-                      <BsStarFill className="text-yellow-400  mt-2 w-8 h-8" />
-                      <BsStarFill className="text-yellow-400 mt-2 w-8 h-8" />
-                      <BsStarFill className="text-gray-300  mt-2 w-8 h-8" />
+                      <BsStarFill className="text-yellow-400  mt-2 w-5 h-5" />
+                      <BsStarFill className="text-yellow-400 mt-2 w-5 h-5" />
+                      <BsStarFill className="text-yellow-400  mt-2 w-5 h-5" />
+                      <BsStarFill className="text-yellow-400 mt-2 w-5 h-5" />
+                      <BsStarFill className="text-gray-300  mt-2 w-5 h-5" />
                     </div>
                   </div>
-                  <div className="flex justify-end px-4 underline text-gray-700 text-lg -mt-2">
+                  <div className="flex justify-end px-4 underline text-gray-700 text-lg -mt-1">
                     <p>1943 reviews</p>
                   </div>
                 </li>
@@ -145,7 +145,7 @@ const Reviewtree = () => {
                         alt="logo"
                         className="w-14 h-14 outline-none"
                       />
-                      <h1 className="text-3xl text-gray-100 lg:text-4xl ml-3">
+                      <h1 className="text-xl text-gray-100 lg:text-4xl ml-3">
                         Trustpilot
                       </h1>
                     </div>
@@ -155,19 +155,19 @@ const Reviewtree = () => {
                   </div>
                   <div className="justify-between items-center flex flex-row px-2 gap-4 mt-5">
                     <div className="flex flex-row gap-2 px-2">
-                      <button className="bg-emerald-500 hover:bg-emerald-400 font-bold items-center text-xl  rounded-md py-3 px-3 text-white">
+                      <button className="bg-emerald-500 hover:bg-emerald-400 font-semibold items-center text-md  rounded-md py-2 px-2 text-white">
                         Leave review
                       </button>
                     </div>
                     <div className="flex flex-row gap-2 px-2">
-                      <BsStarFill className="text-green-400  mt-2 w-8 h-8" />
-                      <BsStarFill className="text-green-400 mt-2 w-8 h-8" />
-                      <BsStarFill className="text-green-400  mt-2 w-8 h-8" />
-                      <BsStarFill className="text-green-400 mt-2 w-8 h-8" />
-                      <BsStarFill className="text-green-400  mt-2 w-8 h-8" />
+                      <BsStarFill className="text-green-400  mt-2 w-5 h-5" />
+                      <BsStarFill className="text-green-400 mt-2 w-5 h-5" />
+                      <BsStarFill className="text-green-400  mt-2 w-5 h-5" />
+                      <BsStarFill className="text-green-400 mt-2 w-5 h-5" />
+                      <BsStarFill className="text-green-400  mt-2 w-5 h-5" />
                     </div>
                   </div>
-                  <div className="flex justify-end px-4 underline text-gray-100 text-lg -mt-2">
+                  <div className="flex justify-end px-4 underline text-gray-100 text-lg -mt-1">
                     <p>283 reviews</p>
                   </div>
                 </li>
@@ -183,7 +183,7 @@ const Reviewtree = () => {
                         alt="logo"
                         className="w-14 h-14 outline-none rounded-full"
                       />
-                      <h1 className="text-3xl text-gray-900 lg:text-4xl ml-3">
+                      <h1 className="text-xl text-gray-900 lg:text-4xl ml-3">
                         Tripadvisor
                       </h1>
                     </div>
@@ -193,19 +193,19 @@ const Reviewtree = () => {
                   </div>
                   <div className="justify-between items-center flex flex-row px-2 gap-4 mt-5">
                     <div className="flex flex-row gap-2 px-2">
-                      <button className="bg-[#33E0A1] hover:bg-emerald-500 font-bold items-center text-xl  rounded-md py-3 px-3 text-black">
+                      <button className="bg-[#33E0A1] hover:bg-emerald-500 font-semibold items-center text-md  rounded-md py-2 px-2 text-black">
                         Leave review
                       </button>
                     </div>
                     <div className="flex flex-row gap-2 px-2">
-                      <BsCircleFill className="text-[#33E0A1] rounded-full mt-2 w-8 h-8" />
-                      <BsCircleFill className="text-[#33E0A1] rounded-full mt-2 w-8 h-8" />
-                      <BsCircleFill className="text-[#33E0A1] rounded-full mt-2 w-8 h-8" />
-                      <BsCircleFill className="text-[#33E0A1] rounded-full mt-2 w-8 h-8" />
-                      <BsCircleFill className="text-white border-4 border-[#33E0A1] rounded-full mt-2 w-8 h-8" />
+                      <BsCircleFill className="text-[#33E0A1] rounded-full mt-2 w-5 h-5" />
+                      <BsCircleFill className="text-[#33E0A1] rounded-full mt-2 w-5 h-5" />
+                      <BsCircleFill className="text-[#33E0A1] rounded-full mt-2 w-5 h-5" />
+                      <BsCircleFill className="text-[#33E0A1] rounded-full mt-2 w-5 h-5" />
+                      <BsCircleFill className="text-white border-4 border-[#33E0A1] rounded-full mt-2 w-5 h-5" />
                     </div>
                   </div>
-                  <div className="flex justify-end px-4 underline text-gray-900 text-lg -mt-2">
+                  <div className="flex justify-end px-4 underline text-gray-900 text-lg -mt-1">
                     <p>29.083 reviews</p>
                   </div>
                 </li>

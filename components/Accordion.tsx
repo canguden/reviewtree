@@ -47,7 +47,7 @@ const Accordion = ({ question, answer, turn, setTurn, idx }: Props) => {
             ref={contentRef}
             className="mx-4 overflow-hidden text-left transition-all duration-300 h-full"
           >
-            <p className="py-1 font-normal leading-normal text-justify whitespace-pre-line text-lg lg:text-xl">
+            <p className="py-1 font-normal leading-normal  whitespace-pre-line text-lg lg:text-xl">
               {answer}
             </p>
           </div>

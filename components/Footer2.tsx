@@ -2,7 +2,6 @@ import Image from "next/image";
 import React from "react";
 import logo from "../public/logo.svg";
 import reviewtreeicon from "../public/reviewtreeicon.svg";
-import { FaInstagram } from "react-icons/fa";
 import Link from "next/link";
 
 const Footer2 = () => {
@@ -21,9 +20,11 @@ const Footer2 = () => {
           </div>
           <ul className="text-xl sm:text-lg  gap-16  text-black font-semibold lg:flex lg:flex-row justify-center ">
             <div className="lg:hidden border-2 border-green-100  mb-5 max-w-7xl mx-auto"></div>
-            <li className="py-4 px-5 cursor-pointer hover:bg-slate-200 hover:rounded-xl hover:py-4 hover:px-5 duration-300">
-              Products
-            </li>
+            <Link href="/shop">
+              <li className="py-4 px-5 cursor-pointer hover:bg-slate-200 hover:rounded-xl hover:py-4 hover:px-5 duration-300">
+                Products
+              </li>
+            </Link>
             <div className="lg:hidden border-2 border-green-100  mt-5 mb-5 max-w-7xl mx-auto"></div>
             <Link href="/yourlink">
               <li className="py-4 px-5 cursor-pointer hover:bg-slate-200 hover:rounded-xl hover:py-4 hover:px-5 duration-300">

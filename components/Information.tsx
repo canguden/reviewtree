@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Information = () => {
   return (
-    <div className=" w-full  pt-20 xl:pt-32  rounded-xl mx-5 lg:mx-auto">
+    <div className=" w-full  pt-20 xl:pt-32  rounded-xl  lg:mx-auto">
       <div className=" max-w-7xl items-center mx-auto grid grid-cols-1 lg:grid-cols-2 xl:gap-32">
         <div className="text-4xl mr-10 lg:-mt-36 lg:text-8xl">
           <Image

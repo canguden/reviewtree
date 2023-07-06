@@ -9,7 +9,7 @@ import LinkForm from "./LinkForm";
 const SectionDemo = () => {
   return (
     <>
-      <div className=" w-full  xl:pt-48  rounded-xl mx-5 lg:mx-auto">
+      <div className=" w-full  xl:pt-48  rounded-xl px-5 lg:mx-auto">
         <div className=" max-w-7xl items-center mx-auto grid grid-cols-1 lg:grid-cols-2 xl:gap-32 ">
           <div className="text-4xl mr-10 lg:-mt-36 rounded-xl lg:text-8xl items-center">
             <Image
@@ -44,7 +44,7 @@ const SectionDemo = () => {
           </div>
         </div>
 
-        <div className="max-w-7xl  mx-10 lg:mx-auto text-center mt-32 font-bold text-3xl xl:text-5xl">
+        <div className="max-w-7xl  px-10 lg:mx-auto text-center mt-32 font-bold text-3xl xl:text-5xl">
           <h1>The best review tool trusted by 50k+</h1>
         </div>
         <div className="w-full mt-20 mb-20 ">

@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <>
       <Header />
-      <div className="justify-center w-full  px-2 lg:mx-auto text-center pt-48 font-bold">
+      <div className="justify-center w-full   lg:mx-auto text-center pt-48 font-bold">
         <h1 className="text-3xl xl:text-5xl ">Contact us</h1>
         <div className="max-w-xl justify-center text-start mx-auto mt-10">
           <ContactForm />

@@ -40,11 +40,8 @@ export default function LinkForm() {
   }
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="flex flex-col sm:flex-row items-center "
-    >
-      <div className="flex flex-row items-center">
+    <form onSubmit={handleSubmit} className="flex flex-col  items-center px-4 ">
+      <div className="flex flex-row items-center mx-4">
         <label htmlFor="full-name" className="mr-5"></label>
         <p>
           <span className="text-gray-700">https://reviewtree.io/</span>
@@ -54,7 +51,7 @@ export default function LinkForm() {
           name="name"
           id="full-name"
           placeholder="yourlink"
-          className=" rounded-full shadow-md max-w-xl py-2 px-4 mt-5 mb-5 outline-none"
+          className=" rounded-full shadow-md max-w-xl py-2 mx-2 px-2 mt-5 mb-5 outline-none"
         />
       </div>
 

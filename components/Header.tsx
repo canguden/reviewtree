@@ -130,6 +130,12 @@ const Header = () => {
               </li>
             </Link>
 
+            <Link href="/yourlink">
+              <li className="text-2xl py-4 flex cursor-pointer   duration-300">
+                Request Link
+              </li>
+            </Link>
+
             <Link href="/faq">
               <li className="text-2xl py-4 flex cursor-pointer   duration-300">
                 FAQs

@@ -31,8 +31,8 @@ export default async function handler(
     });
 
     const session = await stripe.checkout.sessions.create({
-      success_url: "http://localhost:3000/success",
-      cancel_url: "http://localhost:3000/cancel",
+      success_url: "http://reviewtree.io/success",
+      cancel_url: "http://reviewtree.io/cancel",
       line_items: body.lineItems,
       mode: "payment",
     });

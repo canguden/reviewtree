@@ -19,7 +19,7 @@ export default function Home() {
       <section className="mt-[500px] md:mt-[800px] px-2 pb-20 w-full bg-pink-200">
         <Information />
       </section>
-      <section className="bg-green-200 px-4 sm:px-8 h-[750px] ">
+      <section className="bg-green-200 px-4 sm:px-8 h-[780px] ">
         <SectionEnd />
       </section>
       <section className="pt-10 px-2 h-[1250px] xl:[350px]  bg-slate-100">

@@ -37,7 +37,7 @@ const SectionDemo = () => {
               </Link>
             </div>
             <Link href="/shop">
-              <button className="bg-slate-700 mt-10 py-5 px-5 rounded-full text-lg text-white font-semibold">
+              <button className="bg-slate-700 mt-10 py-3 px-3 rounded-full text-lg text-white font-semibold">
                 Visit shop
               </button>
             </Link>

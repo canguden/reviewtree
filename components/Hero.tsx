@@ -14,12 +14,12 @@ const Hero = () => {
             more reviews.
           </p>
           <Link href="/yourlink">
-            <button className="bg-slate-700 mt-5 py-5 px-5 rounded-full text-lg text-white font-semibold">
+            <button className="bg-slate-700 mt-5 py-3 px-3 rounded-full text-lg text-white font-semibold">
               Get started for free 🚀
             </button>
           </Link>
         </div>
-        <div className="text-4xl mr-10 -mt-10 xl:-mt-36 lg:text-8xl text-purple-400">
+        <div className="text-4xl mr-10  xl:-mt-36 lg:text-8xl text-purple-400">
           <Image
             src={hero}
             height={700}

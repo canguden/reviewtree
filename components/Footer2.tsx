@@ -47,16 +47,7 @@ const Footer2 = () => {
           </ul>
           <ul className="text-center justify-center items-center flex pt-5">
             <Link href="/reviewtree">
-              <li className="flex items-center">
-                <Image
-                  src={reviewtreeicon}
-                  height={20}
-                  width={20}
-                  alt="Reviewtree"
-                  className=""
-                />
-                io/reviewtree
-              </li>
+              <li className="flex items-center">🌴.io/reviewtree</li>
             </Link>
           </ul>
         </div>

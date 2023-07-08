@@ -7,7 +7,7 @@ import Link from "next/link";
 const SectionEnd = () => {
   return (
     <div className=" w-full  pt-10 xl:pt-32  rounded-xl mx-5 sm:mx-auto">
-      <div className=" max-w-7xl items-center mx-auto grid grid-cols-1 sm:grid-cols-2  lg:gap-32">
+      <div className=" max-w-7xl items-center mx-auto grid grid-cols-1 sm:grid-cols-2  lg:gap-24">
         <div className="text-4xl font-bold lg:text-8xl text-black">
           <h1>Explore our plans</h1>
           <ul className="flex flex-col text-lg font-semibold mt-10 gap-2">
@@ -112,19 +112,19 @@ const SectionEnd = () => {
               </span>
             </li>
           </ul>
-          <Link href="/">
-            <button className="bg-green-300 mt-5 py-5 px-5 rounded-full text-lg text-black font-semibold">
+          <Link href="/contact">
+            <button className="bg-green-300 mt-5 py-3 px-3 rounded-full text-lg text-black font-semibold">
               Contact us
             </button>
           </Link>
         </div>
-        <div className="text-4xl -mt-10 mr-10 lg:-mt-12 lg:text-8xl">
+        <div className="text-4xl  mr-10 lg:mt-12 lg:text-8xl">
           <Image
             src={end}
-            height={400}
-            width={400}
+            height={500}
+            width={500}
             alt="logo"
-            className="fixed-element lg:pt-20 mx-5 select-none"
+            className="fixed-element lg:pt-10 mx-5 select-none"
           />
         </div>
       </div>

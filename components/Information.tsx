@@ -26,7 +26,7 @@ const Information = () => {
             solution.
           </p>
           <Link href="/yourlink">
-            <button className="bg-purple-200 mt-5 py-5 px-5 rounded-full text-lg text-black font-semibold">
+            <button className="bg-purple-200 mt-5 py-3 px-3 rounded-full text-lg text-black font-semibold">
               I want this 😍
             </button>
           </Link>

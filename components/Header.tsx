@@ -53,15 +53,16 @@ const Header = () => {
 
   return (
     <div className=" max-w-[1400px] z-50 mx-4 xl:mx-auto  flex justify-between items-center h-[60px] lg:h-[70px] bg-slate-100 rounded-full mt-10 shadow-xl">
-      <div className="flex max-w-5xl  mx-1 lg:mx-10 justify-between flex-row items-center uppercase text-xl font-extrabold">
+      <div className="flex max-w-5xl  mx-1  justify-between flex-row items-center uppercase text-xl font-extrabold">
         <Link href="/" className="flex flex-row">
           <Image
             src={logo}
             height={150}
             width={150}
             alt="logo"
-            className="fixed-element mx-5"
+            className="fixed-element ml-5"
           />
+          <span className="-tracking-[2px]">😍🌴</span>
         </Link>
       </div>
       <div>
@@ -164,9 +165,11 @@ const Header = () => {
       <div className="flex items-center xl:hidden">
         <div
           onClick={() => setNav(!nav)}
-          className="flex items-center mr-5 cursor-pointer duration-300 fade-in"
+          className="flex items-center mr-2 cursor-pointer duration-300 fade-in"
         >
           <RxHamburgerMenu size={30} className="" />
+        </div>
+        <div className="flex items-center mr-3 cursor-pointer duration-300 fade-in">
           <ShopHeader />
         </div>
       </div>

@@ -30,7 +30,7 @@ export const CopyClipboard: React.FC<CopyClipboardProps> = ({ content }) => {
     <div>
       <button onClick={handleCopy} className="focus:outline-none">
         {isCopied ? (
-          <span className="text-green-700 duration-300">Copied!</span>
+          <span className="text-white duration-300">Copied!</span>
         ) : (
           <span className="active:translate-y-1 hover:cursor-pointer duration-300">
             Copy

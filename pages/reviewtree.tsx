@@ -38,65 +38,56 @@ const Reviewtree = () => {
 
   return (
     <>
-      <div className="bg-gradient-to-t from-green-200 to-green-300 via-green-200 min-h-screen pt-10 w-full mx-auto">
+      <div className="bg-gradient-to-t from-green-700 to-slate-300 via-blue-200 min-h-screen pt-10 w-full mx-auto">
         <div className="max-w-2xl mx-auto">
           <div className="flex pt-5">
             <Link href="/" className="flex">
               <BsArrowLeft className="w-10 h-6" /> Back home
             </Link>
           </div>
-          <div className="sticky top-10 bg-green-200 backdrop-blur-2xl max-w-2xl z-50 mx-5 xl:mx-auto  flex justify-center items-center h-[60px] lg:h-[60px]  rounded-full mt-5 shadow-sm">
-            <div className="justify-center items-center text-center"></div>
-            <Link href="/">
-              <Image
-                src={logo}
-                height={100}
-                width={100}
-                alt="logo"
-                className="border-slate-500 bg-black shadow-md border w-14 h-14 rounded-full"
-              />
-            </Link>
-          </div>
+
           <div className="max-w-2xl mx-auto  justify-center items-center text-center mt-4">
-            <h1 className="text-gray-700 font-bold text-2xl">@reviewtree</h1>
+            <h1 className="text-gray-700 font-bold text-2xl">
+              Reviewtree<span className="-tracking-[2px]">😍🌴</span>
+            </h1>
             <p className="mt-2 ">
               Effortlessly gather and manage reviews with ease
             </p>
           </div>
-          <div className="max-w-2xl text-black font-bold mx-5 justify-center items-center flex text-center mt-20 xl:mx-auto flex-col">
+          <div className="max-w-2xl  font-bold mx-5 justify-center items-center flex text-center mt-20 xl:mx-auto flex-col">
             <h1 className="text-4xl italic mb-10">
               Your feedback matters to us!
             </h1>
             <h1>Generate your review with AI and save time.</h1>
             <button
               onClick={generateReview}
-              className="bg-pink-200 mt-5 py-4 px-5 rounded-full"
+              className="bg-emerald-600 text-white mt-5 py-4 px-5 rounded-full"
               disabled={isLoading} // Disable the button while loading
             >
               {isLoading ? (
                 <div className="flex items-center justify-center">
-                  <div className="w-2 h-2 bg-black rounded-full animate-bounce mx-1"></div>
-                  <div className="w-2 h-2 bg-black rounded-full animate-bounce mx-1"></div>
-                  <div className="w-2 h-2 bg-black rounded-full animate-bounce mx-1"></div>
+                  <div className="w-2 h-2 bg-white rounded-full animate-bounce mx-1"></div>
+                  <div className="w-2 h-2 bg-white rounded-full animate-bounce mx-1"></div>
+                  <div className="w-2 h-2 bg-white rounded-full animate-bounce mx-1"></div>
                 </div>
               ) : (
                 "Generate review"
               )}
             </button>
             {showReview && (
-              <div className="border-4 border-pink-300 mt-5 font-semibold text-start text-sm text-gray-600 py-5 px-5">
+              <div className="border-2 border-emerald-500 mt-5 font-semibold text-start text-sm text-gray-600 py-5 px-5">
                 <p>{reviewText}</p>
               </div>
             )}
             {showReview && (
-              <div className="flex flex-row text-xl items-center gap-2 mt-5 py-3 px-3 bg-pink-200 rounded-xl">
+              <div className="flex flex-row text-xl items-center gap-2 mt-5 py-3 px-3 bg-emerald-600 text-white rounded-xl">
                 <CopyClipboard content={textToCopy} />
               </div>
             )}
           </div>
           <div className="max-w-[600px] pb-20 mx-5 justify-center items-center flex text-center mt-20 xl:mx-auto ">
             <ul className="text-black w-full mx-4 sm:mx-auto">
-              <Link href="/deals" target="_blank">
+              <Link href="https://google.com/" target="_blank">
                 <li className=" bg-white rounded-xl py-4 mb-10">
                   <div className="flex flex-row grow justify-between mx-2">
                     <div className="flex flex-row items-center ">
@@ -134,7 +125,7 @@ const Reviewtree = () => {
                   </div>
                 </li>
               </Link>
-              <Link href="/deals" target="_blank">
+              <Link href="https://trustpilot.com/" target="_blank">
                 <li className=" bg-[#000032] rounded-xl py-4 mb-10">
                   <div className="flex flex-row grow justify-between mx-2">
                     <div className="flex flex-row items-center ">
@@ -172,7 +163,7 @@ const Reviewtree = () => {
                   </div>
                 </li>
               </Link>
-              <Link href="/" target="_blank">
+              <Link href="https://tripadvisor.com/" target="_blank">
                 <li className=" bg-white rounded-xl py-4 mb-10">
                   <div className="flex flex-row grow justify-between mx-2">
                     <div className="flex flex-row items-center ">
@@ -213,11 +204,11 @@ const Reviewtree = () => {
             </ul>
           </div>
           <div className="max-w-2xl px-2 mx-auto pb-20 justify-center items-center text-center mt-4">
-            <h1 className="text-xl font-semibold ">
+            <h1 className="text-xl font-semibold text-white">
               Apply now to personalize your link with your unique homestyle!
             </h1>
             <Link href="/yourlink">
-              <button className="bg-pink-200 text-black mt-5 font-semibold py-2 px-3 rounded-full">
+              <button className="bg-pink-200 text-black mt-5 font-semibold py-3 px-3 rounded-full">
                 Request Link
               </button>
             </Link>
